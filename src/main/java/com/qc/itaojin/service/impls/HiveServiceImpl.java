@@ -2,6 +2,7 @@ package com.qc.itaojin.service.impls;
 
 import com.qc.itaojin.common.HiveConstants;
 import com.qc.itaojin.dao.HiveBaseDao;
+import com.qc.itaojin.service.BaseService;
 import com.qc.itaojin.service.IHiveService;
 import com.qc.itaojin.util.StringUtils;
 import lombok.Data;
@@ -16,7 +17,7 @@ import java.util.Set;
  */
 @Data
 @Slf4j
-public class HiveServiceImpl implements IHiveService {
+public class HiveServiceImpl extends BaseService implements IHiveService {
 
     private HiveBaseDao hiveBaseDao;
 
